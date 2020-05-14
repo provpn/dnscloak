@@ -7,9 +7,11 @@ require (
 	github.com/google/flatbuffers v1.11.0
 	github.com/jedisct1/dlog v0.0.0-20190909160351-692385b00b84
 	github.com/jedisct1/dnscrypt-proxy v0.0.0
-	github.com/jedisct1/go-dnsstamps v0.0.0-20191014084838-3e6e00f2b602
-	github.com/miekg/dns v1.1.22
+	github.com/jedisct1/go-dnsstamps v0.0.0-20200205175031-8109eec6ec46
+	github.com/miekg/dns v1.1.29
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
+	gopkg.in/yaml.v2 v2.3.0 // indirect
 )
 
-replace github.com/jedisct1/dnscrypt-proxy => ../..
+// replace github.com/jedisct1/dnscrypt-proxy => ../../framework/ios
+replace github.com/jedisct1/dnscrypt-proxy => ../../../dnscrypt-proxy

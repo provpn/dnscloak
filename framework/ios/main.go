@@ -72,7 +72,7 @@ func Main(configFile string) *App {
 		dlog.Fatal(err)
 	}
 
-	dlog.Noticef("dnscrypt-proxy %s", AppVersion)
+	dlog.Noticef("dnscrypt-proxy %s", dnscrypt.AppVersion)
 
 	if !tls13ok {
 		dlog.Warn("Failed to initialize TLS 1.3 support")

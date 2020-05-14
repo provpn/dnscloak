@@ -43,11 +43,11 @@ func NewConfig() *Config {
 	}
 }
 
-func DefaultConfig() *Config {
-	return &Config{
-		config: dnscrypt.DefaultConfig(),
-	}
-}
+//func DefaultConfig() *Config {
+//	return &Config{
+//		config: dnscrypt.DefaultConfig(),
+//	}
+//}
 
 func (config *Config) LoadToml(cfg string) error {
 	md, err := toml.Decode(cfg, &(config.config))
